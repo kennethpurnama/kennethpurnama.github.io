@@ -1,0 +1,65 @@
+header{
+    height:100px;
+    background-color: #eee;
+    display:grid;
+    grid-template-columns: 35% 10% 10% 10% 35%;
+}
+
+header > h1{
+    font-size: 20px;
+    font-weight: 10;
+    justify-self: center;
+    align-self: center;
+}
+
+#products {
+    display:grid;
+    grid-column:2;
+}
+
+/* similar to the home page, setting the header grid layout and the header nav bar to its middle positon */
+
+.main_image{
+    width:100%;
+    height:auto;
+}
+
+nav {
+    display:grid;
+    height:100px;
+    background-color: #eee;
+    grid-template-columns: 5% 5% 70% 5% 5% 5% 5%;
+}
+
+.icons{
+    height: 40px;
+    padding: 30px;
+}
+
+.page_title{
+    font-size: 24px;
+    font-weight: 20;
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.product_types_container{
+    height:400px;
+    background-color: red;   
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.product_types{
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
