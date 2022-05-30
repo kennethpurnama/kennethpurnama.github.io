@@ -1,0 +1,134 @@
+header{
+    height:100px;
+    background-color: #eee;
+    display:grid;
+    grid-template-columns: 5% 5% 73% repeat(4,4%);
+}
+.icons{
+    height:50px;
+    padding: 25px;
+}
+#query{
+    justify-self: end;
+}
+#wishlist{
+    justify-self: end;
+}
+#cart{
+    justify-self: end;
+}
+#profile{
+    justify-self: end;
+}
+.page_title{
+    justify-self: center;
+    font-size: 3rem;
+    font-weight: 20;
+}
+
+.cart_flex_container{
+    height:auto;
+    background-color: red;
+    display:flex;
+}
+#cart_product_image{
+    height:15em
+}
+.cart_product_container{
+    height:18em;
+    width:auto;
+    background-color: aqua;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4,1fr);
+    padding:3em;
+}
+#cart_product_image{
+    grid-column: 1;
+    grid-row: 1/4;
+}
+.cart_product_title{
+    grid-column:2;
+    grid-row: 1;
+    padding-left:1em
+}
+.cart_product_price{
+    grid-column:2;
+    grid-row: 2;
+    padding-left:1em
+}
+.quantity_button{
+    grid-column:2;
+    grid-row: 3;
+    justify-self: end;
+    padding-right:2em
+}
+.options{
+    grid-column:2;
+    grid-row: 4;
+    padding-left:1em
+}
+
+.bill_grid_container{
+    display:grid;
+    height:20em;
+    background-color: blue;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.bill_subtotal{
+    grid-column:1;
+    grid-row:1;
+    justify-self:end;
+}
+.bill_value_subtotal{
+    grid-column:3;
+    grid-row:1;
+    justify-self:start;
+}
+.bill_tax{
+    grid-column:1;
+    grid-row:2;
+    justify-self:end;
+}
+.bill_value_tax{
+    grid-column:3;
+    grid-row:2;
+    justify-self:start;
+}
+.bill_total{
+    grid-column:1;
+    grid-row:3;
+    justify-self:end;
+}
+.bill_value_total{
+    grid-column:3;
+    grid-row:3;
+    justify-self:start;
+}
+.checkout_button{
+    grid-column:2;
+    grid-row:4;
+    justify-self:center;
+}
+
+.recommended_products_container{
+    height:20em;
+    background-color: yellow;
+    display:grid;
+    grid-template-rows: 20% 80%;
+}
+#recommended_products_image{
+    height:15em;
+}
+.recommended_products_title{
+    grid-row:1;
+    padding-left:2em;
+}
+.recommended_products_flex{
+    grid-row:2;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}

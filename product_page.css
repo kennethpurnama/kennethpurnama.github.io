@@ -2,7 +2,7 @@ header{
     height:100px;
     background-color: #eee;
     display:grid;
-    grid-template-columns: 5% 5% 73% repeat(3,4%);
+    grid-template-columns: 5% 5% 73% repeat(4,4%);
 }
 .icons{
     height:50px;
@@ -87,13 +87,69 @@ header{
 }
 
 .style_ratings_cart_container{
-    height:25em;
+    height:15em;
     position:static;
     background-color: red;
+    display:grid;
     grid-template-columns:  repeat(5,1fr) 5fr 5fr ;
     grid-template-rows: repeat(3,1fr);
 }
+.product_style{
+    grid-column: 1/6;
+    grid-row: 1;
+    justify-self: center;
+}
+.product_style_desc_1{
+    grid-column:2;
+    grid-row:3;
+}
+.product_style_desc_2{
+    grid-column:4;
+    grid-row:3;
+}
+.review_title{
+    grid-column:6;
+    grid-row:1;
+    justify-self: center;
+}
+.review{
+    grid-column:6;
+    grid-row:2;
+    justify-self: center;
+}
+.see_more_button{
+    grid-column:6;
+    grid-row:3;
+    justify-self: center; 
+}
+.cart_button{
+    grid-column:7;
+    grid-row:2;
+    justify-self: center; 
+}
+.wishlist_button{
+    grid-column:7;
+    grid-row:3;
+    justify-self: center; 
+}
 
+.recommended_products_container{
+    height:20em;
+    background-color: yellow;
+    display:grid;
+    grid-template-rows: 20% 80%;
+}
+#recommended_products_image{
+    height:15em;
+}
+.recommended_products_title{
+    grid-row:1;
+    padding-left:2em;
+}
+.recommended_products_flex{
+    grid-row:2;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
 
-
-
+}

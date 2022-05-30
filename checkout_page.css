@@ -1,0 +1,58 @@
+.main_image{
+    width:100%;
+}
+
+nav{
+    height:5em;
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 10% 10% 80%;
+}
+#back_button{
+    height:3em;
+    padding:1em;
+}
+#logo{
+    height:3em;
+    padding:1em;
+}
+#page_title{
+    font-size: 2em;
+    font-weight: 20;
+}
+.page_title{
+    position:absolute;
+    justify-self: center;
+    align-self: top;
+}
+
+.main_container{
+    height:40em;
+    background-color: red;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.column_1_container{
+    height:auto;
+    width:auto;
+    grid-column: 1;
+    display:grid;
+    grid-template-rows:50% 1fr 1fr 1fr 1fr;
+    background-color: yellow;
+}
+.bill_container{
+    height:5em;
+    width:5em;
+    grid-row:1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7,1fr);
+    background-color: pink;
+}
+.bill_title{
+    grid-column: 1;
+    grid-row:1;
+    justify-self: center;
+    font-size: rem;
+}
+
