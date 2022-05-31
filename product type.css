@@ -44,22 +44,54 @@ nav {
     align-self: center;
 }
 
-.product_types_container{
-    height:400px;
+.product_types_flex{
+    height: 20em;
+    padding:1em;
+    gap:2em;
     background-color: red;   
     display:flex;
-    justify-content: space-between;
-    align-content: center;
-
+    justify-content: space-around;
+    align-items: center;
 }
-
 .product_types{
-    height: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 20em;
+    width: 20em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.product_types_container{
+    width: 20em;
+    height: 15em;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.layer{
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    transition: all 0.9s ease;
+    transform: scale(0);
+}
+.product_types_container:hover .layer{
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+.layer > p{
+    transform: scale(1);
+    transition: all 0.9s ease;
 }
 
-
-
-
-
+.room_container:hover .layer > p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+}               

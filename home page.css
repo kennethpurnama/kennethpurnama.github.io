@@ -10,17 +10,18 @@ header{
 /* sets the header size and grids to place the different elements (logo and top nav bar)*/
 
 header > img{
-  height:60px;
+  height:5em;
   grid-column:1; 
   align-self: center;
   justify-self: center;
 }
 
 header > h1{
-  font-size: 20px;
+  font-size: 1.75em;
   font-weight: 10;
   justify-self: center;
   align-self: center;
+  color:#7D8E71;
 }
 
 #products {
@@ -49,50 +50,105 @@ nav{
   align-self: center;
 }
 
-.New_arrivals{
-  height: 300px;
+.new_arrivals_container{
+  height: 30em;
   background-color: #eee;
-  display:flex;
-
+  display:grid;
+  grid-template-columns: 30% 20% 50%;
+}
+#new_arrivals_image{
+  height: 30em;
+  width:30em;
+  object-fit: fill;
+}
+.new_arrivals_title{
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+.new_arrivals_text{
+  grid-column: 2;
+  grid-row:1;
+  justify-self:end;
+  align-self: center;
+}
+#New_arrivals_products{
+  height:20em;
+  width:20em;
+}
+.product_overflow_container{
+  grid-column: 3;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-template-rows: 1fr;
+  width: 100%;
+  overflow-x: auto;
+}
+.new_arrivals_products{
+  grid-row: 1;
+  grid-column: auto;
+  align-self:center;
+  padding:1em;
 }
 
 .New_arrivals > h2{
 font-size: 24px;
 font-weight: 10;
+color:#7D8E71;
 }
 
 p {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  color:#4F5047
 }
 
-#New_arrivals_products {
-  overflow-y: hidden;
+
+.product_rooms_flex{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:2em;
+  gap: 1em;
+}
+#room_choice{
+  width:15em;
+  height:15em;
+}
+.room_container{
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer{
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  transition: all 0.9s ease;
+  transform: scale(0);
 }
 
-.product_rooms {
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 20% 70% 10%;
-  height:400px;
-  background-color: #eee;
-  display:grid;
+.room_container:hover .layer{
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  transform: scale(1);
 }
-
-.product_rooms > h2{
-  grid-column: 1;
-  grid-row: 1;
+.layer > p{
+  transform: scale(0);
+  transition: all 0.9s ease;
 }
-
-#room_choice {
-  width:100%;
-  max-width: 200px;
-  max-height: 200px;
-  grid-column:1/6 ;
-  grid-row:2;
-
-}
-.product_rooms > h3{
-  grid-column: 1/6;
-  grid-row: 3;
-}
-
+  
+.room_container:hover .layer > p {
+  transform: scale(1);
+  transition: all 0.9s ease;
+}               

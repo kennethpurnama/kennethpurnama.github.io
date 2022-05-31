@@ -102,10 +102,30 @@ header{
 .product_style_desc_1{
     grid-column:2;
     grid-row:3;
+    justify-self: center;
 }
 .product_style_desc_2{
     grid-column:4;
     grid-row:3;
+    justify-self: center;
+}
+.style_option_1{
+    width: 5em;
+    height: 3em;
+    background-color: brown;
+    border-radius: 2em;
+    grid-column:2;
+    grid-row:2;
+    justify-self: center; 
+}
+.style_option_2{
+    width: 5em;
+    height: 3em;
+    background-color: black;
+    border-radius: 2em;
+    grid-column:4;
+    grid-row:2;
+    justify-self: center; 
 }
 .review_title{
     grid-column:6;
@@ -122,17 +142,32 @@ header{
     grid-row:3;
     justify-self: center; 
 }
-.cart_button{
+#see_more_button{
+    text-decoration: none;
+}
+.buttons{
     grid-column:7;
     grid-row:2;
     justify-self: center; 
 }
 .wishlist_button{
+    width: 10em;
+    height: 3em;
+    background-color: aquamarine;
+    border-radius: 2em;
     grid-column:7;
     grid-row:3;
     justify-self: center; 
 }
-
+.cart_button{
+    width: 20em;
+    height: 5em;
+    background-color: aquamarine;
+    border-radius: 3em;
+    grid-column: 7;
+    grid-row: 2;
+    justify-self:center;
+}
 .recommended_products_container{
     height:20em;
     background-color: yellow;
@@ -151,5 +186,39 @@ header{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;
-
 }
+.recommended_products_image{
+    width: 15em;
+    height: 15em;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .layer{
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    transition: all 0.9s ease;
+    transform: scale(0);
+  }
+  .recommended_products_image:hover .layer{
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+    transform: scale(1);
+  }
+  .layer > p{
+    transform: scale(0);
+    transition: all 0.9s ease;
+  }
+  .recommended_products_image:hover .layer > p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }                 
