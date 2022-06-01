@@ -1,13 +1,16 @@
+html{
+    background-color: #EAEAEA;
+}
 header{
-    height:100px;
-    background-color: #eee;
+    height:5vw;
     display:grid;
     grid-template-columns: 35% 10% 10% 10% 35%;
 }
 
 header > h1{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 10;
+    color: #7D8E71;
     justify-self: center;
     align-self: center;
 }
@@ -23,32 +26,32 @@ header > h1{
     width:100%;
     height:auto;
 }
-
 nav {
     display:grid;
-    height:100px;
-    background-color: #eee;
+    height:3em;
     grid-template-columns: 5% 5% 70% 5% 5% 5% 5%;
 }
-
 .icons{
-    height: 40px;
-    padding: 30px;
+    height: 2.5vw;
 }
-
-.page_title{
-    font-size: 24px;
+#page_title{
+    font-size: 3vw;
     font-weight: 20;
+}
+.page_title{
     grid-column: 3;
+    color: #6E794D;
+    position:absolute;
     justify-self: center;
     align-self: center;
 }
 
+/*nav bar and icon sizes are set to be responsive, simple 2d grid without rows are used to maintain element positions, could be done with
+flex but is much harder to be precise as opposed to the grid structure*/
 .product_types_flex{
     height: 20em;
     padding:1em;
     gap:2em;
-    background-color: red;   
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -68,8 +71,12 @@ nav {
     justify-content: center;
     align-items: center;
   }
+p{
+    font-size: 2vw;
+    color: white;
+}
 .layer{
-    background-color: white;
+    background-color: #6E794D;
     opacity: 0.8;
     position: absolute;
     display: flex;
@@ -95,3 +102,5 @@ nav {
     transform: scale(1);
     transition: all 0.9s ease;
 }               
+
+/*Sets the product types into place and animates them so that mouse hovers bring up its titles.*/

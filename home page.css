@@ -1,80 +1,86 @@
-
+html{
+  background-color: #EAEAEA;
+}
 header{
-  height: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 7.5vw;
+  padding-left: 2em;
+  padding-right: 2em;
   display:grid;
-  background-color: #eee;
   grid-template-columns: repeat(8, 1fr);
 }
-/* sets the header size and grids to place the different elements (logo and top nav bar)*/
-
 header > img{
-  height:5em;
+  height:3.5vw;
   grid-column:1; 
   align-self: center;
   justify-self: center;
 }
 
 header > h1{
-  font-size: 1.75em;
+  font-size: 2vw;
   font-weight: 10;
   justify-self: center;
   align-self: center;
   color:#7D8E71;
+  white-space: nowrap;
 }
-
 #products {
   grid-column: 6;
 }
-/* sets the elements within the header into their places, and aesthetic*/
+/*header settings, setting everything in the header into place, vw units keep every element responsive,
+'white-space:nowrap' allows the new arrivals text to stay in place without stacking*/
 
 .main_image{
   width:100%;
   height:auto;
 }
-/* sets main image to be responsive depending on the size of the window */
+/*sets the main image of the website to be responsive and take up a percentage of the screen depending on its size*/
 
 nav{
-  height: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #eee;
+  height: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   display:flex;
   justify-content: end;
   align-self: center;
 }
-
 .icons{
-  height:50px;
+  height:2.5em;
   align-self: center;
 }
+/*nav bar settings, units in em to accomodate responsiveness, using vw yields tiny icons creating bad user experience*/
 
 .new_arrivals_container{
   height: 30em;
-  background-color: #eee;
   display:grid;
   grid-template-columns: 30% 20% 50%;
 }
 #new_arrivals_image{
   height: 30em;
-  width:30em;
-  object-fit: fill;
+  width:27.5vw;
+  object-fit:cover;
 }
 .new_arrivals_title{
   grid-column: 2;
   grid-row: 1;
-  justify-self: center;
+  justify-self:start;
+  align-self:start;
+  font-size: 3em;
+  font-weight: 20;
+  color: #7D8E71;
 }
 .new_arrivals_text{
   grid-column: 2;
   grid-row:1;
+  font-size:1vw;
+  font-weight: 10;
+  line-height: 1.5em;
   justify-self:end;
   align-self: center;
 }
 #New_arrivals_products{
-  height:20em;
-  width:20em;
+  height:20vw;
+  width:20vw;
+  border-radius: 1em;
 }
 .product_overflow_container{
   grid-column: 3;
@@ -96,14 +102,13 @@ font-size: 24px;
 font-weight: 10;
 color:#7D8E71;
 }
-
-p {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#4F5047
+/*Contains the main section of the page,divided into 2, consists of a grid layout, within the grid are images,texts,
+and an x-overflow container, allowing the 'new arrival' products to be browsed through easily*/
+.layer > p {
+  font-size: 2vw;
+  font-family:'Times New Roman', Times, serif;
+  color:white;
 }
-
-
 .product_rooms_flex{
   display:flex;
   justify-content: space-around;
@@ -125,7 +130,7 @@ p {
   align-items: center;
 }
 .layer{
-  background-color: white;
+  background-color:#7D8E71;
   opacity: 0.8;
   position: absolute;
   display: flex;
@@ -152,3 +157,5 @@ p {
   transform: scale(1);
   transition: all 0.9s ease;
 }               
+/* Sets the product room choices into place, also controls the hover effect for each image, as shown in the workshops, the code was taken
+and adapted to be used in the website's context*/

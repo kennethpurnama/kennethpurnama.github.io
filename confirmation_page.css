@@ -1,0 +1,77 @@
+html{
+    background-color: #EAEAEA;
+}
+header{
+    height:5vw;
+    display:grid;
+    grid-template-columns: 5% 83% repeat(3,4%);
+}
+
+.icons{
+    height:3vw;
+    padding:1em;
+    justify-self: end;
+}
+#query{
+    justify-self: end;
+}
+#wishlist{
+    justify-self: end;
+}
+#cart{
+    justify-self: end;
+}
+#profile{
+    justify-self: end;
+}
+/*basic header taken from another page*/
+.page_title_container{
+    height:10vw;
+    width:100%;
+    display:grid;
+    justify-content: center;
+    align-items: start;
+}
+
+.page_title_container > p{
+    font-size: 3.5vw;
+    color: #6E794D;
+}
+
+.alert_container{
+    height:25vw;
+    background-color: #EBDACB;
+    width:40vw;
+    border-radius: 1em;
+    display:grid;
+    justify-content: center;
+    margin-left:30vw;
+    margin-top:1em;
+}
+.alert_container_text{
+    font-size: 1.5vw;
+    justify-self: center;
+    padding:1em;
+    color: #6E794D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home_button{
+    height:5vw;
+    width: 35vw;
+    border-radius: 3em;
+    font-size: 2vw;
+    font-weight: 10;
+    background-color: #B6B99E;
+    color:#4F5047;
+}
+.order_button_container{
+    margin-left: 32.5vw;
+    height:5vw;
+    width: 35vw;
+    border-radius: 3em;
+    font-size: 2vw;
+    font-weight: 10;
+    margin-top: 0.5em;
+    background-color: #B6B99E;
+    color:#4F5047;
+}

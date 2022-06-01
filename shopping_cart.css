@@ -1,11 +1,13 @@
+html{
+    background-color: #EAEAEA;
+}
 header{
-    height:100px;
-    background-color: #eee;
+    height:7vw;
     display:grid;
     grid-template-columns: 5% 5% 73% repeat(4,4%);
 }
 .icons{
-    height:50px;
+    height:3vw;
     padding: 25px;
 }
 #query{
@@ -22,31 +24,45 @@ header{
 }
 .page_title{
     justify-self: center;
-    font-size: 3rem;
-    font-weight: 20;
+    align-self: center;
+    font-size: 3vw;
+    font-weight: 10;
+    color: #6E794D;
 }
+/*header stops here, adjusted to become smaller when the page is rendered on a smaller screen size*/
 
-.cart_flex_container{
-    height:auto;
-    background-color: red;
-    display:flex;
+body{
+    margin-left:5em;
+    margin-right:5em;
+}
+.cart_overflow_container{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-template-rows: 1fr;
+    width: 100%;
+    overflow-x: auto;
 }
 #cart_product_image{
-    height:15em
+    height:15vw;
 }
 .cart_product_container{
-    height:18em;
+    height:18vw;
     width:auto;
-    background-color: aqua;
+    height:auto;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4,1fr);
     padding:3em;
+    grid-row: 1;
+    grid-column: auto;
+    align-self:center;
+    padding:1em;
 }
 .options_button_1{
     height:2em;
     width:10em;
-    background-color: pink;
+    background-color: #7E6251;
+    color: #EAEAEA;
     border-radius: 2em;
     grid-column:2;
     grid-row: 4;
@@ -55,7 +71,8 @@ header{
 .options_button_2{
     height:2em;
     width:10em;
-    background-color: pink;
+    background-color: #7E6251;
+    color:#EAEAEA;
     border-radius: 2em;
     grid-column:2;
     grid-row: 4;
@@ -66,11 +83,14 @@ header{
     grid-row: 1/4;
 }
 .cart_product_title{
+    font-size:2vw;
     grid-column:2;
     grid-row: 1;
     padding-left:1em
 }
 .cart_product_price{
+    font-size:2vw;
+    font-weight: 10;
     grid-column:2;
     grid-row: 2;
     padding-left:1em
@@ -92,19 +112,25 @@ header{
     padding-right:2em
 }
 label{
+    font-size:1vw;
     grid-column:2;
     grid-row: 3;
     justify-self:end;
     align-self:center;
     padding-right:0.5em;
+    padding-top:0.5em;
 }
 
 .bill_grid_container{
     display:grid;
     height:20em;
-    background-color: blue;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.bill_grid_container > p {
+    font-size:2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6E794D;
 }
 .bill_subtotal{
     grid-column:1;
@@ -115,6 +141,7 @@ label{
     grid-column:3;
     grid-row:1;
     justify-self:start;
+    align-self: center;
 }
 .bill_tax{
     grid-column:1;
@@ -137,25 +164,30 @@ label{
     justify-self:start;
 }
 .checkout_button{
-    width: 30em;
-    height: 5em;
-    background-color: aquamarine;
-    border-radius: 3em;
+    width: 30vw;
+    height: 5vw;
+    background-color: #6E794D;
+    color:white;
+    font-size:2vw;
+    border-radius: 0.75em;
     grid-column:2;
     grid-row:4;
     justify-self:center;
+
 }
 
 .recommended_products_container{
-    height:20em;
-    background-color: yellow;
+    height:20vw;
     display:grid;
     grid-template-rows: 20% 80%;
 }
 #recommended_products_image{
-    height:15em;
+    height:15vw;
 }
 .recommended_products_title{
+    font-size:2vw;
+    justify-self: start;
+    align-self:top;
     grid-row:1;
     padding-left:2em;
 }
@@ -166,13 +198,14 @@ label{
     justify-content:space-around;
 }
 .recommended_products_image{
-    width: 15em;
-    height: 15em;
+    width: 15vw;
+    height: 15vw;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 1em;
   }
   .layer{
     background-color: white;

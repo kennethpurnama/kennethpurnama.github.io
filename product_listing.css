@@ -1,17 +1,16 @@
 
 header{
-    height:100px;
+    height:5vw;
     background-color: #eee;
     display:grid;
     grid-template-columns: 5% 83% repeat(3,4%);
 }
 
 .icons{
-    height:50px;
-    padding:25px;
+    height:3vw;
+    padding:1em;
     justify-self: end;
 }
-
 #query{
     justify-self: end;
 }
@@ -25,55 +24,75 @@ header{
     justify-self: end;
 }
 
+/*Header set into place, responsive */
+
 .options_container{
     display:grid;
     grid-template-columns: 10% 80% 10%;
     background-color: green;
 }
-
 #navigation{
-    padding-left:20px;
-    padding-bottom:20px;
+    padding-left:2em;
+    padding-bottom:2em;
 }
 .options_container > h1{
-    font-size: 24px;
+    font-size: 3vw;
     font-weight: 20;
     justify-self: center;
     align-self: center;
 }
 
-.sidebar_container{
-    height: 100%;
-    width:20%;
-    background-color: #eee;
+.main_grid_container{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    height:auto;
+    width:auto;
+    background-color: pink;
 }
+.sidebar_container{
+    grid-column: 1;
+    height:auto;
+    background-color: purple;
+
+}
+.main_flex_container{
+    display:flex;
+    flex-wrap:wrap;
+
+    grid-column: 2;
+    height:auto;
+    gap: 1em;
+    padding: 2em;
+}
+
 h1{
-    font-size: 35px;
-    font-weight: 50;
+    font-size: 2.5vw;
+    font-weight: 20;
 }
 h2{
-    font-size:25px;
-    font-weight:25;
+    font-size:2vw;
+    font-weight:10;
 }
 p{
-    font-size:18px;
+    font-size:1.5vw;
     font-weight:10;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .product_container{
-    height:300px;
-    width:300px;
+    height:23vw;
+    width:23vw;
     background-color: #eee;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(6,1fr);
 }
 #main_image{
-    height:150px;
-    max-width:fit-content;
+    height:12vw;
+    width:13vw;
+    object-fit: cover;
 }
-.main_image{
+.main_image_container{
     grid-column:span 2;
     grid-row: span 3;
     justify-self: center;
@@ -81,8 +100,8 @@ p{
 }
 
 #side_image{
-    height:50px;
-    justify-self: center;
+    height:5vw;
+    justify-self:start;
     align-self:center;
 }
 .side_image_1{

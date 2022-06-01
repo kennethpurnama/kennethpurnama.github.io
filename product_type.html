@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product_type_page</title>
+    <title>product_type_page</title>
     <link rel="stylesheet" href="product type.css">
 </head>
 <header>
@@ -12,8 +12,10 @@
     <h1 id="new arrivals">New Arrivals</h1>
     <h1 id="sale"> Sale</h1>
 </header>
+<!--Header elements are placed as h1, and given individual id's: part of the learning process, I realized I did not need to give them
+individual id's in order to put them into place-->
 
-<body>
+<body style="margin:0">
 <img class="main_image" src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Product_type_page_top_image.jpg">
 
 <nav>
@@ -23,7 +25,12 @@
     <div>
         <img class=icons id=logo src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Living_emporium_logo.png">
     </div>
-    <h2 class="page_title">Dining Room</h2>
+    <div class="page_title">
+        <h2 id="page_title">Dining Room</h2>
+    </div>
+    <div clas="placeholder">
+
+    </div>
     <div>
          <img class=icons id=query src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Icon_query.png">
     </div>
@@ -37,6 +44,9 @@
         <img class=icons id=profile src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Icon_Profile.png">
     </div>
 </nav>
+<!--The nav bar elements are here, each image was given a class and id, later I also learned that this was not proper as the classes should
+go on the div in order to guide the image containers instead of the actual images which could be simply guided by the already assigned
+tags-->
 
 <div class="product_types_flex">
     <div class="product_types_container">
@@ -63,6 +73,8 @@
         </div>
         <img class=product_types src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/product_types_replacement.jpeg">
     </div>
+<!--Product types are defined and put into a flexbox container so that they are responsive to size changes, a layer with text is added onto
+each image so that they can be animated when the mouse hovers onto it, as shown in the workshop-->
 </div>
 </body>
 </html> 
