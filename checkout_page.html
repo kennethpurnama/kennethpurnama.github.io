@@ -10,7 +10,7 @@
 <header>
     <img class="main_image" src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Checkout_page_top_image_2.jpeg">
 </header>
-<body>
+<body style="margin:0">
     <nav>
         <div class="icon">
             <img id=back_button src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/icon_back_button.png">
@@ -24,41 +24,107 @@
     </nav>
     <div class="main_container">
         <div class="column_1_container">
-            <div class="bill_container>">
+            <div class="bill_container">
                 <div class="bill_title">
-                    <h2 id="bill_title">Order Summary</h2>
-                 </div>
-                <div class="product_name">
-                    <h3 >MÖRBYLÅNGA</h3>
+                    <p>Order Summary</p>
                 </div>
-                <div class="product_price">
-                     <h3>$1,099</h3>
+                <div class="bill_item_1">
+                    <p>MÖRBYLÅNGA</p>
                 </div>
-                <div class="quantity">
-                    <h3>x1</h3>
+                <div class=bill_price_1>
+                    <p>$1,099</p>
                 </div>
-                <div class="product_name">
-                    <h3 >Ekedalen</h3>
+                <div class="quantity_1">
+                    <p>x1</p>
                 </div>
-                <div class="product_price">
-                    <h3>379</h3>
+                <div class="bill_item_2">
+                    <p>Ekedalen</p>
                 </div>
-                <div class="quantity">
-                    <h3>x1</h3>
+                <div class=bill_price_2>
+                    <p>$1,099</p>
                 </div>
-                <div class="bill_tax">
-                    <h3>GST/Tax</h3>
+                <div class="quantity_2">
+                    <p>x1</p>
                 </div>
-                <div class="bill_tax_amount">
-                    <h3>$147.8</h3>
+                <div class="tax_title">
+                    <p>GST/Tax</p>
                 </div>
-                <div class="bill_total">
-                    <h3>Total</h3>
+                <div class="total_title">
+                    <p>Total</p>
                 </div>
-                <div class="bill_total_amount">
-                    <h3>$1,625.8</h3>
+                <div class="tax_amount">
+                    <p>$147.8</p>
+                </div>
+                <div class="total_amount">
+                    <p>$1,625.8</p>
                 </div>
             </div>
+            <div class="column_1_title">
+                <h2>Delivery Options</h2>
+            </div>
+            <button class="delivery_option">Express Delivery - $69</button>
+            <button class="delivery_option"> Regular - $29</button>
+            <button class="delivery_option">Day Delivery - $149</button>
+        </div>
+        <div class="column_2_container">
+            <div class="column_2_title">
+                <h2>Delivery Information</h2>
+            </div>
+            <div class="first_name_form">
+                <label>First Name</label>
+                <input type="text" class="textInput" id="first_name" name="name" size="50"/>
+            </div>
+            <div class="last_name_form">
+                <label>Last Name</label>
+                <input type="text" class="textInput" id="last_name" name="surname" size="50" />
+            </div>
+            <div class="email_form">
+                <label>Email</label>
+                <input type="text" class="textInput" id="email" name="email" size="50"/>
+            </div>
+            <div class="mobile_number_form">
+                <label>Mobile Number</label>
+                <input type="text" class="textInput" id="mobile_number" name="mobile" size="50"/>
+            </div>
+            <div class="address_form">
+                <label>Street Address (Unit/House Number)</label>
+                <input type="text" class="textInput" id="address" name="address" size="50"/>
+            </div>
+        </div>
+        <div class="column_3_container">
+            <div class="column_3_title">
+                <h2>Payment</h2>
+            </div>
+            <div class="payment_method_container">
+
+            </div>
+            <div class="card_number_form">
+                <label>Card Number</label>
+                <input type="text" class="textInput" id="card_number" name="card" size="50" />
+            </div>
+            <div class="card_date_form">
+                <label>MM/YY</label>
+                <input type="text" class="textInput" id="card_date" name="date" size="50" />
+            </div>
+            <div class="security_code_form">
+                <label>Security</label>
+                <input type="text" class="textInput" id="security_code" name="security" size="50" />
+            </div>
+            <div class="delivery_title">
+                <p>Delivery</p>
+            </div>
+            <div class="delivery_cost">
+                <p>$69</p>
+            </div>
+            <div class="total_title">
+                <p>Total</p>
+            </div>
+            <div class="total_cost">
+                <p>$1,694.8</p>
+            </div>
+            <button class="pay_button">Pay $1,694.8</button>
+            </div>
+
         </div>
     </div>
     
