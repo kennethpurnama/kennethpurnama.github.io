@@ -36,6 +36,7 @@ header{
 .page_title_container > p{
     font-size: 3.5vw;
     color: #6E794D;
+    font-family: 'Nuosu SIL', serif;
 }
 
 .alert_container{
@@ -53,7 +54,8 @@ header{
     justify-self: center;
     padding:1em;
     color: #6E794D;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .home_button{
     height:5vw;
@@ -63,9 +65,11 @@ header{
     font-weight: 10;
     background-color: #B6B99E;
     color:#4F5047;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .order_button_container{
-    margin-left: 32.5vw;
+    margin-left: 32.1vw;
     height:5vw;
     width: 35vw;
     border-radius: 3em;
@@ -74,4 +78,5 @@ header{
     margin-top: 0.5em;
     background-color: #B6B99E;
     color:#4F5047;
+    font-family: 'Montserrat', sans-serif;
 }

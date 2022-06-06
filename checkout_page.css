@@ -1,3 +1,6 @@
+html{
+    background-color: #EAEAEA;
+}
 .main_image{
     width:100%;
 }
@@ -23,12 +26,12 @@ nav{
     position:absolute;
     justify-self: center;
     color: #6E794D;
+    font-family: 'Nuosu SIL', serif;
 }
 /*Sets the nav bar and the introductory image*/
 
 .main_container{
     height:50vw;
-    background-color: red;
     display:grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -38,7 +41,6 @@ nav{
     grid-column: 1;
     display:grid;
     grid-template-rows:60% repeat(4,10%);
-    background-color: yellow;
 }
 .bill_container{
     margin-top: 1em;
@@ -48,21 +50,27 @@ nav{
     border-radius: 1em;
     height:22em;
     width:auto;
-    background-color: pink;
+    background-color: #EBDACB;
     display:grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 20% 10% 10% 10% 30% 10% 10%;
+    grid-template-rows: 20% 10% 10% 10% 20% 10% 10% 10%;
 }
 .bill_title{
     grid-row: 1;
     grid-column: 1/3;
     justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size:2vw;
+    color: #6E794D;
 }
 .bill_item_1{
     grid-row:2;
     grid-column: 1;
     padding-left: 1em;
     font-size: 1.5vw;
+    color: #6E794D;
+    font-family: 'Montserrat', sans-serif;
 }
 .bill_price_1{
     grid-row:3;
@@ -70,16 +78,21 @@ nav{
     padding-left:1em;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .quantity_1{
     grid-row:3;
     grid-column: 2;
+    font-family: 'Montserrat', sans-serif;
 }
 .bill_item_2{
     grid-row:4;
     grid-column: 1;
     padding-left: 1em;
     font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+    color: #6E794D;
 }
 .bill_price_2{
     grid-row:5;
@@ -87,29 +100,37 @@ nav{
     padding-left:1em;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .quantity_2{
     grid-row:5;
     grid-column: 2;
+    font-family: 'Montserrat', sans-serif;
 }
 .tax_title{
+    color: #6E794D;
     grid-row:6;
     grid-column: 1;
     padding-left:1em;
     align-self: top;
+    font-family: 'Nuosu SIL', serif;
 }
 .tax_amount{
     grid-row:6;
     grid-column: 2;
+    font-family: 'Nuosu SIL', serif;
 }
 .total_title{
+    color: #6E794D;
     grid-row:7;
     grid-column: 1;
     padding-left:1em;
+    font-family: 'Nuosu SIL', serif;
 }
 .total_amount{
     grid-row:7;
     grid-column: 2;
+    font-family: 'Nuosu SIL', serif;
 }
 /*Sets elements into the bill container*/
 .column_1_title{
@@ -124,20 +145,24 @@ h2{
     border-radius: 2em;
     width: 30vw;
     justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #B6B99E;
+    color: #4F5047;
 }
 /*completes the first column's contents*/
 .column_2_container{
     height:50vw;
     width:auto;
-    background-color: green;
     display:grid;
     grid-template-rows:25% repeat(5,15%);
 }
 .column_2_title{
     justify-self: center;
+    font-family: 'Nuosu SIL', serif;
 }
 .first_name_form{
     justify-self: center;
+    
 }
 .last_name_form{
     justify-self: center;
@@ -153,15 +178,132 @@ h2{
 }
 label{
     display:block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:#7D8E71;
 }
+/*column 2 code*/
 .column_3_container{
     height:50vw;
-    background-color: orange;
+    width:auto;
+    display:grid;
+    grid-template-rows: 15% 20% repeat(5,10%) 15%;
 }
 .payment_method_container{
     height:10vw;
-    background-color: aqua;
+    grid-row: 2;
+    display:grid;
+    grid-template-columns: 80% 10% 10%;
+    grid-template-rows: 1fr 1fr;
+}
+.column_3_title{
+    justify-self: center;
+    font-family: 'Nuosu SIL', serif;
+}
+.payment_button_1{
+    height:3vw;
+    width:20vw;
+    border-radius: 1em;
+    justify-self: center;
+    align-self: center;
+    background-color: #B6B99E;
+    color: #4F5047;
+    font-family: 'Montserrat', sans-serif;
+}
+.payment_button_2{
+    height:3vw;
+    width:20vw;
+    border-radius: 1em;
+    justify-self: center;
+    align-self: center;
+    background-color: #B6B99E;
+    color: #4F5047;
+    font-family: 'Montserrat', sans-serif;
+}
+.payment_image{
+    height:2.5vw;
+    width:3vw;
+    border-radius: 0.5em;
+}
+.payment_method_1{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+.payment_method_2{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+.payment_method_3{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+}
+.card_number_form{
+    justify-self: center;
+    grid-row:3;
+    align-self: center;
+}
+.card_date_form{
+    justify-self: center;
+    grid-row:4;
+    align-self: center;
+}
+.security_code_form{
+    justify-self: center;
+    grid-row:5;
+    align-self: center;
+}
+.final_bill_container{
+    grid-row: 6/8;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.delivery_title{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    font-size: 1.5vw;
+    font-family: 'Nuosu SIL', serif;
+    color: #6E794D;
+}
+.delivery_cost{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    font-size: 1.5vw;
+    font-family: 'Nuosu SIL', serif;
+}
+.final_total_title{
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    font-size: 1.5vw;
+    font-family: 'Nuosu SIL', serif;
+    color: #6E794D;
 }
 
+.total_cost{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    font-size: 1.5vw;
+    font-family: 'Nuosu SIL', serif;
+}
+.pay_button{
+    grid-row: 8;
+    justify-self: center;
+    height:6vw;
+    width: 25vw;
+    border-radius: 1em;
+    font-size: 2vw;
+    background-color: #6E794D;
+    color: #EAEAEA;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/*column 3 code*/

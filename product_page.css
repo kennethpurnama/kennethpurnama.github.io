@@ -86,16 +86,21 @@ h1{
     font-size: 5vw;
     font-weight: 100;
     color: #7D8E71;
+    font-family: 'Nuosu SIL', serif;
+
 }
 .product_price{
     grid-row: 2;
     align-self: top;
+    
 }
 h2{
     font-size: 3vw;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color: #7D8E71;
+
 }
 .subheader_desc{
     grid-row:3;
@@ -104,15 +109,16 @@ h3{
     font-size: 3vw;
     font-weight: 100;
     color: #7D8E71;
+    font-family: 'Nuosu SIL', serif;
 }
 .product_description{
     grid-row:4;
 }
 .product_description > p{
     font-size: 1.15vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5vw;
-    font-weight: 100;
+    font-weight: 300;
     padding-left: 4em;
     padding-right: 4em;
     text-align: justify;
@@ -126,8 +132,8 @@ h3{
 }
 .product_dimensions > p{
     font-size: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     padding-left: 1em;
 }
 /*information is displayed in this container*/
@@ -148,6 +154,7 @@ h4{
     font-size: 2vw;
     font-weight: 100;
     color: #7D8E71;
+    font-family: 'Nuosu SIL', serif;
 }
 .product_style_desc_1{
     grid-column:2;
@@ -191,8 +198,8 @@ h4{
     justify-self: center;
 }
 .review > p{
-    font-size: 1.5vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 .see_more_button{
@@ -202,6 +209,7 @@ h4{
 }
 #see_more_button{
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 .buttons{
     grid-column:7;
@@ -218,6 +226,7 @@ h4{
     grid-column:7;
     grid-row:3;
     justify-self: center; 
+    font-family: 'Montserrat', sans-serif;
 }
 .cart_button{
     width: 12em;
@@ -229,19 +238,23 @@ h4{
     grid-column: 7;
     grid-row: 2;
     justify-self:center;
+    font-family: 'Montserrat', sans-serif;
 }
 .recommended_products_container{
-    height:20em;
+    padding-top: 2vw;
+    height:20vw;
     display:grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 30% 70%;
 }
 #recommended_products_image{
-    height:15em;
+    height:15vw;
+    width: 15vw;
+    object-fit: cover;
 }
 .recommended_products_title{
     grid-row:1;
-    grid-column: 1;
     padding-left:2em;
+    font-family: 'Nuosu SIL', serif;
 }
 .recommended_products_flex{
     grid-row:2;
@@ -251,8 +264,8 @@ h4{
     justify-content:space-around;
 }
 .recommended_products_image{
-    width: 15em;
-    height: 15em;
+    width: 15vw;
+    height: 15vw;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -281,6 +294,7 @@ h4{
     color: white;
     transform: scale(0);
     transition: all 0.9s ease;
+    font-family: 'Nuosu SIL', serif;
   }
   .recommended_products_image:hover .layer > p {
     transform: scale(1);

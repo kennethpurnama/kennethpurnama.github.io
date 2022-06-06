@@ -22,6 +22,8 @@ header > h1{
   align-self: center;
   color:#7D8E71;
   white-space: nowrap;
+  font-family: 'Nuosu SIL', serif;
+
 }
 #products {
   grid-column: 6;
@@ -67,15 +69,17 @@ nav{
   font-size: 3em;
   font-weight: 20;
   color: #7D8E71;
+  font-family: 'Nuosu SIL', serif;
 }
 .new_arrivals_text{
   grid-column: 2;
   grid-row:1;
   font-size:1vw;
-  font-weight: 10;
   line-height: 1.5em;
   justify-self:end;
   align-self: center;
+  font-family: 'Montserrat', sans-serif;
+
 }
 #New_arrivals_products{
   height:20vw;
@@ -106,7 +110,7 @@ color:#7D8E71;
 and an x-overflow container, allowing the 'new arrival' products to be browsed through easily*/
 .layer > p {
   font-size: 2vw;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Nuosu SIL', serif;
   color:white;
 }
 .product_rooms_flex{
@@ -128,6 +132,7 @@ and an x-overflow container, allowing the 'new arrival' products to be browsed t
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 1em;
 }
 .layer{
   background-color:#7D8E71;
@@ -147,6 +152,7 @@ and an x-overflow container, allowing the 'new arrival' products to be browsed t
   width: 90%;
   transition: all 0.5s ease;
   transform: scale(1);
+  border-radius: 1em;
 }
 .layer > p{
   transform: scale(0);

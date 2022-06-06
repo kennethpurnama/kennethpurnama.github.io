@@ -67,6 +67,7 @@ body{
     grid-column:2;
     grid-row: 4;
     margin-left:2em;
+    font-family: 'Montserrat', sans-serif;
 }
 .options_button_2{
     height:2em;
@@ -77,6 +78,7 @@ body{
     grid-column:2;
     grid-row: 4;
     margin-left:2em;
+    font-family: 'Montserrat', sans-serif;
 }
 #cart_product_image{
     grid-column: 1;
@@ -86,14 +88,17 @@ body{
     font-size:2vw;
     grid-column:2;
     grid-row: 1;
-    padding-left:1em
+    padding-left:1em;
+    font-family: 'Nuosu SIL', serif;
+    color:#6E794D;
 }
 .cart_product_price{
     font-size:2vw;
     font-weight: 10;
     grid-column:2;
     grid-row: 2;
-    padding-left:1em
+    padding-left:1em;
+    font-family: 'Montserrat', sans-serif;
 }
 #quantity_1{
     height:2em;
@@ -119,6 +124,7 @@ label{
     align-self:center;
     padding-right:0.5em;
     padding-top:0.5em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bill_grid_container{
@@ -131,6 +137,7 @@ label{
     font-size:2em;
     font-family: Arial, Helvetica, sans-serif;
     color: #6E794D;
+    font-family: 'Montserrat', sans-serif;
 }
 .bill_subtotal{
     grid-column:1;
@@ -173,6 +180,7 @@ label{
     grid-column:2;
     grid-row:4;
     justify-self:center;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -180,6 +188,7 @@ label{
     height:20vw;
     display:grid;
     grid-template-rows: 20% 80%;
+    padding-top: 2em;
 }
 #recommended_products_image{
     height:15vw;
@@ -190,6 +199,8 @@ label{
     align-self:top;
     grid-row:1;
     padding-left:2em;
+    color: #6E794D;
+
 }
 .recommended_products_flex{
     grid-row:2;
@@ -224,10 +235,12 @@ label{
     width: 90%;
     transition: all 0.5s ease;
     transform: scale(1);
+    background-color: #6E794D;;
   }
   .layer > p{
     transform: scale(0);
     transition: all 0.9s ease;
+    color: white;
   }
   .recommended_products_image:hover .layer > p {
     transform: scale(1);

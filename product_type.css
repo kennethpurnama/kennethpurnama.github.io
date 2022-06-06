@@ -13,6 +13,7 @@ header > h1{
     color: #7D8E71;
     justify-self: center;
     align-self: center;
+    font-family: 'Nuosu SIL', serif;
 }
 
 #products {
@@ -37,6 +38,7 @@ nav {
 #page_title{
     font-size: 3vw;
     font-weight: 20;
+    font-family: 'Nuosu SIL', serif;
 }
 .page_title{
     grid-column: 3;
@@ -74,6 +76,7 @@ flex but is much harder to be precise as opposed to the grid structure*/
 p{
     font-size: 2vw;
     color: white;
+    font-family: 'Nuosu SIL', serif;
 }
 .layer{
     background-color: #6E794D;
