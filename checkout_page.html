@@ -7,6 +7,7 @@
     <title>checkout</title>
     <link rel="stylesheet" href="checkout_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <header>
     <img class="main_image" src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Checkout_page_top_image_2.jpeg">
@@ -71,7 +72,7 @@
             <button class="delivery_option"> Regular - $29</button>
             <button class="delivery_option">Day Delivery - $149</button>
         </div>
-        <div class="column_2_container">
+        <form class="column_2_container">
             <div class="column_2_title">
                 <h2>Delivery Information</h2>
             </div>
@@ -95,7 +96,7 @@
                 <label>Street Address (Unit/House Number)</label>
                 <input type="text" class="textInput" id="address" name="address" size="50"/>
             </div>
-        </div>
+        </form>
         <div class="column_3_container">
             <div class="column_3_title">
                 <h2>Payment</h2>
@@ -113,18 +114,18 @@
                 </div>
                 <button class="payment_button_2">PayPal</button>
             </div>
-            <div class="card_number_form">
+            <form class="card_number_form">
                 <label>Card Number</label>
                 <input type="text" class="textInput" id="card_number" name="card" size="50" />
-            </div>
-            <div class="card_date_form">
+            </form>
+            <form class="card_date_form">
                 <label>MM/YY</label>
                 <input type="text" class="textInput" id="card_date" name="date" size="50" />
-            </div>
-            <div class="security_code_form">
+            </form>
+            <form class="security_code_form">
                 <label>Security</label>
                 <input type="text" class="textInput" id="security_code" name="security" size="50" />
-            </div>
+            </form>
             <div class="final_bill_container">
                 <div class="delivery_title">
                     <p>Delivery</p>
@@ -139,7 +140,7 @@
                     <p>$1,694.8</p>
                 </div>
             </div>
-            <button onclick="location.href='http://127.0.0.1:5500/confirmation_page.html'" class="pay_button">Pay $1,694.8</button>
+            <button onclick="return validate()" action="checkout_page.html" type="submit" class="pay_button">Pay $1,694.8</button>
         </div>
     </div>
     
