@@ -42,6 +42,7 @@ body{
     width: 100%;
     overflow-x: auto;
 }
+/*overflow-x allows for the elements to go past the container without being shown (horizontal scrolling)*/
 #cart_product_image{
     height:15vw;
 }
@@ -126,6 +127,7 @@ label{
     padding-top:0.5em;
     font-family: 'Montserrat', sans-serif;
 }
+/*Up to this point the cart is responsive to size, even until the smallest setting. However needs some tweaking to be perfect in responsiveness*/
 
 .bill_grid_container{
     display:grid;
@@ -181,7 +183,6 @@ label{
     grid-row:4;
     justify-self:center;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .recommended_products_container{

@@ -187,6 +187,10 @@ h4{
     justify-self: center; 
     align-self: center;
 }
+#style_option_btn:focus{
+    background-color: #6E794D;
+}
+/*Once selected the button is highlighted in a green colour to indicate that this was the chosen style option by the user*/
 .review_title{
     grid-column:6;
     grid-row:1;
@@ -299,4 +303,4 @@ h4{
   .recommended_products_image:hover .layer > p {
     transform: scale(1);
     transition: all 0.9s ease;
-  }                 
+  }             

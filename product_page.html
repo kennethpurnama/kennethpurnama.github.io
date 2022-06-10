@@ -35,6 +35,7 @@
         <img class=icons src="https://raw.githubusercontent.com/kennethpurnama/INFO-20005-collated-images-icons/main/Icon_Profile.png">
     </div>
 </header>
+<!--Navbar set in header-->
 <body style="margin:0">
    <div class="main_grid_container">
         <div class="image_grid_container">
@@ -89,6 +90,8 @@
             </div>
         </div>
    </div>
+   <!--Two grid containers within a larger grid container in order to follow the original design and ensure that the final design does not
+    seem too blocky-->
     <div class="style_ratings_cart_container">
         <div class="product_style">
             <h4>Colour and Style</h4>
@@ -97,9 +100,9 @@
             <p>Exposed Wood</p>
         </div>
 
-        <button class="style_option_1"></button>
+        <button class="style_option_1" id="style_option_btn"></button>
 
-        <button class="style_option_2"></button>
+        <button class="style_option_2" id="style_option_btn"></button>
 
         <div class="product_style_desc_2">
             <p>Black</p>
@@ -114,12 +117,11 @@
             <a href="#" id="see_more_button">see more</a>
         </div>
 
-        <button class="cart_button">Add to Cart</button>
+        <button onclick="location.href='http://127.0.0.1:5500/shopping_cart.html'" class="cart_button">Add to Cart</button>
 
         <button class="wishlist_button">Add to Wishlist</button>
-
     </div>
-
+    <!--Div contains more functionalities lined up in 1 grid-->
     <div class="recommended_products_container">
         <div class="recommended_products_title">
             <h3>Recommended Products</h3>
@@ -157,5 +159,6 @@
             </div>
         </div>
     </div>
+    <!--Recommended products are shown users to peak their interest, products shown here are similar to the product being viewed-->
 </body>
 </html>

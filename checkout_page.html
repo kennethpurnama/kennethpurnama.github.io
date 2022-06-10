@@ -28,6 +28,7 @@
             <h1 id="page_title">Checkout</h1>
          </div>
     </nav>
+    <!--Navbar no longer holds profile, customer service, cart, or wishlist as it reverts focus towards the purchasing steps-->
     <div class="main_container">
         <div class="column_1_container">
             <div class="bill_container"> 
@@ -68,6 +69,7 @@
             <div class="column_1_title">
                 <h2>Delivery Options</h2>
             </div>
+            <!--Holds the virtual bill of a user, more products would result in possible a vertical scrolling bill or a longer container-->
             <button class="delivery_option">Express Delivery - $69</button>
             <button class="delivery_option"> Regular - $29</button>
             <button class="delivery_option">Day Delivery - $149</button>
@@ -141,8 +143,10 @@
                 </div>
             </div>
             <button onclick="return validate()" action="checkout_page.html" type="submit" class="pay_button">Pay $1,694.8</button>
+            <!--Runs the javascript function connected in script.js, validates whether or not the user has entered all fields-->
         </div>
     </div>
+    <!--The page's main section is composed of a three grid system, they are -->
     
 </body>
 </html>
