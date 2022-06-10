@@ -149,12 +149,16 @@ h2{
     background-color: #B6B99E;
     color: #4F5047;
 }
-.delivery_option 
+.delivery_option:focus{
+    background-color: #6C2E2E;
+    color: white;
+}
 /*completes the first column's contents*/
 .column_2_container{
     height:50vw;
     width:auto;
     display:grid;
+    justify-self: center;
     grid-template-rows:25% repeat(5,15%);
 }
 .column_2_title{
